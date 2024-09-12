@@ -10,3 +10,5 @@ Four jumper wires must be installed on the FC-900 (see "FC900_jumpers.jpg"):
 The operator enables the PL decoder by setting "UF-7" to be open.  Setting UF-7 to "closed/GND" disables the decode option
 allowing the FC-900 to function normally with carrier squelch.  The MX-315 pins noted above (U5, 3 total) are not used and
 are not connected to the mezzanine socket for the MX-315.
+
+Note: This mod provides tone squelch ONLY to the "A" (main) band.  The "B" (sub) band is not included and operates normally.
