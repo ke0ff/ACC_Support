@@ -2,13 +2,13 @@ PL Decoder for the FC-900
 This is an interposer that installs at the IC location for the MX-315 PL encoder chip on the FC-900 PCB.
 Four jumper wires must be installed on the FC-900 (see "FC900_jumpers.jpg"):
 1) U3-5 connects to U3-8 (this duplicates UF-7 and isolates the decoder connection from the external connector)
-2) U5-9 connects to U3-11 (this is the duplicate UF-7, was a no-connect)
-3) U5-10 connects to U1-5 (SQSA)
-4) U5-12 connects to R22/C18 (DETA)
-5) On the bottom side of the FC-900, cut the trace from U5-12 to the nearby via.  This connects to a capacitor that does not
+2) U7-9 connects to U3-11 (this is the duplicate UF-7, was a no-connect)
+3) U7-10 connects to U1-5 (SQSA)
+4) U7-12 connects to R22/C18 (DETA)
+5) On the bottom side of the FC-900, cut the trace from U7-12 to the nearby via.  This connects to a capacitor that does not
    appear on the FC-900 schematic and is not needed.
 The operator enables the PL decoder by setting "UF-7" to be open.  Setting UF-7 to "closed/GND" disables the decode option
-allowing the FC-900 to function normally with carrier squelch.  The MX-315 pins noted above (U5, 3 total) are not used and
+allowing the FC-900 to function normally with carrier squelch.  The MX-315 pins noted above (U7, 3 total) are not used and
 are not connected to the mezzanine socket for the MX-315.
 
 Note: This mod provides tone squelch ONLY to the "A" (main) band.  The "B" (sub) band is not included and operates normally.
