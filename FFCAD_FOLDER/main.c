@@ -64,7 +64,7 @@
   *
   ******************************************************************************
   * REV NOTES
-  * Rev 0.2 10/01/26 jmh
+  * Rev 0.3 10/01/26 jmh
   * - Added test bench using build directive and re-tasking TEST output to be a
   * 	10ms burst of 1KHz square wave at 2 sec intervals to use as a precision test
   * 	stimulus.  Build and load on Nucleo.
@@ -230,7 +230,7 @@ int main(void)
 #ifdef TESTSET
   puts0("\nFF-CAD GEN-II TEST SET VT.01 by Joseph Haas, KE0FF\n(c) 9/30/2026, All Rights Reserved"); // send version/copyright notice to UART
 #else
-  puts0("\nFF-CAD GEN-II V0.02 by Joseph Haas, KE0FF\n(c) 10/01/2026, All Rights Reserved"); // send version/copyright notice to UART
+  puts0("\nFF-CAD GEN-II V0.03 by Joseph Haas, KE0FF\n(c) 10/01/2026, All Rights Reserved"); // send version/copyright notice to UART
 #endif
 
   switch(i){ 																			// send mode setting to UART
