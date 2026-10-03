@@ -9,3 +9,5 @@ FFCAD_G2SW.zip:
 In process SW project folder.  Latest is Rev 0.02.  Future updates will go into the same filename.
 
 9/26/26: Still waiting on PCBs for first article HW/SW verification testing.
+
+10/2/26: PCBs arrived and first-article assembled and DVT complete.
