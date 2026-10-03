@@ -1,0 +1,17 @@
+PCB -001 Assembly Instruction
+10/03/2026
+
+The first-run PCBs suffered from several minor flaws that are addressed at assembly:
+
+1) R5 ground is open.  Action: expose GND plane adjacent to open R5 pad and apply jumper.
+
+2) D2 & D3 silkscreen is oriented backwards.  Action: install D2 and D3 opposite to the indicated silkscreen orientation.
+
+3) Controller 4053-pin9 sense is reversed.  Action: place an inverter (74HC1G14xxx) at U10.
+
+4) COS_HI_TRUE sense is inverted.  Action: Cut jumper ground connection (4 places at JU1 pad-1).
+					Expose GND plane adjacent to JU1 pad-2 and place 10K to GND.
+					Prior to JU1 install, route jumper from JU1 pad-1 to +5V (top side, U11-5).
+					DNP R28 pullup resistor.
+
+5) J1 interferes with RC-96 electrolytic capacitor.  Action: Install connector at J2 and run jumper for COS.
