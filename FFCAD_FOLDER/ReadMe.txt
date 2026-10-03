@@ -11,3 +11,4 @@ In process SW project folder.  Latest is Rev 0.02.  Future updates will go into 
 9/26/26: Still waiting on PCBs for first article HW/SW verification testing.
 
 10/2/26: PCBs arrived and first-article assembled and DVT complete.
+         main.c archived separately (no other project changes).  Extract zip archive, then copy main.c into Core->Src folder.
