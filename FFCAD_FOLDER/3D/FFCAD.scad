@@ -1,32 +1,10 @@
 // OpenSCAD 2019.05
-// Tiva Case - enclosure, REV-001
-// Joe Haas, KE0FF, 12/16/2021
-// This is an enclosure for an EK-TM4C123GXL LaunchPad board and a custom LaunchPad
-//	carrier board.
+// FF-CAD GEN-II Support HW, REV-001
+// Joe Haas, KE0FF, 10/06/2026
+// Standoffs for the FF-CAD ACC installation.
 //
-// Rev-004, 1/2/2022
-//	Final adjustments from rev3 printing
-//	added edge chamfers to top & bot at the platen faces of each part.  Softens the edge and
-//		helps to counteract "elephant-foot" expansion.
-//	increased depth of countersinks
-//	increased size of USB port
-//	removed SMA pilots for RF3&4 and replaced with "spot-face" that is 0.7mm thick
-//	added another 0.5mm to lip0 for more edge clearance for LP board
-//	Fixed 2-manifold rendering error in top piece (added 0.001mm to the "x" location
-//		of the two corner rounds furthest from the rev text)
-//
-// Rev-003 (bot), 12/24/2021
-//	(bot) added lid mtg countersinks (x6)
-//
-// Rev-003 (lid), 12/23/2021
-//	(lid) added lip0 clips to remove interference
-//
-// Rev-002, 12/21/2021
-//	incorporated fixes from first print run
-//	increased lid thickness to provide room for stock LP board
-//
-// Rev-001, 12/16/2021
-//	initial code -- copied from uxcover
+// Rev-001, 10/06/2026
+//	initial code
 
 //----------------------------------------------------------------------------------------------------------------------
 // User defined parameters.  Modify these to suit a particular application
@@ -37,19 +15,6 @@
 i2m = 25.4;
 m2m = i2m/1000;
 
-ix = 1.2*25.4;
-ex = 0.25*25.4;
-px = ix + ex;
-py = .49*25.4;
-pz = .25*25.4;
-nx = 0.05*25.4;
-nz = .12*25.4;
-pitch = 0.1 * 25.4;
-pdia = .05*25.4;
-offsx = .08*25.4;
-bz = 0.05*25.4;
-
-wy = 0.1*25.4;
 
 // NOTES ///////////////////
 // stoff() and off_stoff() are the RC-96 standoffs.  Set stoff85 = 0;
@@ -117,8 +82,11 @@ module stoff(){
 module cap85(){
 dx = 1;
 	translate([-oox/2,0,-2*ooz]) difference(){
+		// main body
 		translate([dx,0,ooz]) cube([2*oox,ooy,2*ooz], center=true);
-		translate([oox/2,0,0]) cylinder(r=dia4/2, h=1*i2m, $fn=32, center=true);
+		// #4 thru
+		translate([(oox/2)+0.01,0,0]) cylinder(r=dia4/2, h=1*i2m, $fn=32, center=true);
+		// PCB "notch-out"
 		translate([(-oox/2)-(dia4/2),0,(3*ooz)-pthk+(0.001*i2m)]) cube([2*oox,1.1*ooy,2*ooz], center=true);
 		// edge chams
 		translate([oox+dx,ooy/2,0]) cylinder(r=chame/2, h=3*oht, $fn=4, center=true);
