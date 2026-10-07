@@ -25,3 +25,5 @@ The RC-85 chassis version also attaches directly using the RC-96 M-F standoff an
 For the board-only RC-85, three spacer DIP sockets are used to raise the delay above the J8
 connector.  The longer standoffs (one features a 4-40 stud to turn it into a M-F standoff)
 and end cap are used.
+
+FFCAD.scad is the openscad source file.  Build options are used to produce each of the above outputs.
