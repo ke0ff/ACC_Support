@@ -13,3 +13,5 @@ In process SW project folder.  Latest is Rev 0.02.  Future updates will go into 
 10/2/26: PCBs arrived and first-article assembled and DVT complete.
          main.c archived separately (no other project changes).  Extract zip archive, then copy main.c into Core->Src folder.
          This is the final development revison (V0.03) before field-test.
+
+10/6/26: Added 3D folder for support hardware source/object.
