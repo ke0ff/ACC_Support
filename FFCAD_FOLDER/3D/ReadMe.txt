@@ -14,6 +14,7 @@ The RC-85 version features two (2) F-F standoffs, one (1) offset-standoff, and o
 to allow one of the F-F standoffs to "grip" the RC-85 PCB edge.
 
 RC-85 offset standoff: ostoff85.stl
+RC-85 offset standoff (short): ostoff85_short.stl (for RC-85 chassis version)
 RC-85 standoff: stoff85.stl
 RC-85 bottom cap: cap85.stl
 
