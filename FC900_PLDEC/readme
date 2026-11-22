@@ -1,4 +1,5 @@
 11/22/26: Updated for -002 FAB changes to incorporate SO24W package size.
+Note: PC900dec.zip is iniital FAB version (deprecated).
 
 PL Decoder for the FC-900
 This is an interposer that installs at the IC location for the MX-315 PL encoder chip on the FC-900 PCB.
