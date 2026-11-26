@@ -1,4 +1,4 @@
-FF-CAD GEN-2 Design Repo
+FF-CAD (Codec Audio Delay) GEN-2 Design Repo
 
 FFCAD_ACC.zip:
 Initial commit of HW and SW projects (HW is frozen)
